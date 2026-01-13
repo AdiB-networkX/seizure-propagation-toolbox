@@ -74,8 +74,6 @@ Set up the following paths:
 
 `output_directory`: Output directory to save all ranked .csv files for particular centrality.
 
-#### `nw-select.py`
-
 #### `check-centrality-distributions.py`
 
 This code displays the centrality distributions of both network constituents across all networks on interactive template as well as .gif.
@@ -245,5 +243,6 @@ Plots obtained from `edge-cent_annotated-masked.py` is stored here.
 Output .csv file and corresponding plots obtained from `count-MIEs.py` and `plot-MIEs.py` respectively are stored here.
 
 #### weighted-Shannon-based-grouping
+
 
 Output .csvs and plot obtained from `szr-grouping_ictal-period.py` are stored here. The plot here shows the pattern of propagation mode for a particular seizure corresponding to a specific centrality.
