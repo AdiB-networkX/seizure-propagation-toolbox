@@ -220,7 +220,8 @@ def nn_centrality(G, weight='None'): #(nearest neighbour edge centrality)
 
 def calc_cent(G, cent):
     if cent=='B':
-        G.ep.weight.a=1./G.ep.weight.a
+        #G.ep.weight.a=1./G.ep.weight.a
+        G.ep.weight.a=G.ep.weight.a
         v,e=betweenness(G, weight=G.ep.weight)
 
     elif cent=='nn':
