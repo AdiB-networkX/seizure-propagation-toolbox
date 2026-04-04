@@ -24,7 +24,7 @@ Pearson correlation matrices corresponding to a single seizure are provided.
 
 `vertex-ranking.py` : Assigns ranks to vertices separately for each brain network.
 
-`nw-select.py` : 
+`nw-select.py` : Binning method is used for selection.
 
 `check-centrality-distributions.py` : Plots centrality distributions for vertices as well as edges across networks.
 
