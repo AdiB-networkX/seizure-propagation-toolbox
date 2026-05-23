@@ -74,6 +74,27 @@ Set up the following paths:
 
 `output_directory`: Output directory to save all ranked .csv files for particular centrality.
 
+#### `nw-select.py`
+
+Set up the following paths:
+
+`vertex_files`: Uses .csv file containing centrality ranks of all vertices across all networks corresponding to each seizure. In given code, one file path is loaded, but adding multiple file paths is also allowed.
+
+`edge_files`: Uses .csv file containing centrality values of all vertices across all networks corresponding to each seizure. In given code, one file path is loaded, but adding multiple file paths is also allowed.
+
+`segment_files`: Uses .py file containing a list of index groups, where each sublist specifies the indices of individual networks. For example, [0,1,2,3,4,5] represents the 7 consecutive networks grouped for binning. Each file has a structure as follows:
+
+```python
+segment_scheme = [
+...
+    [13,14,15],
+    [16,17,18],
+    [19,20,21],
+    [22,23,24],
+  ...
+]
+```
+
 #### `check-centrality-distributions.py`
 
 This code displays the centrality distributions of both network constituents across all networks on interactive template as well as .gif.
