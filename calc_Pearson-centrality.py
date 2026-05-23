@@ -90,12 +90,11 @@ def calculate_correlation_matrix(data):
         The [0] at the end extracts only the correlation coefficient from the tuple
         returned by pearsonr. The p-value is ignored in this case.
         """
-        corr_matrix[i, j] = corr_matrix[j, i] = 1/abs(corr)
+        corr_matrix[i, j] = corr_matrix[j, i] = abs(corr)
         """
-            <b> corr_matrix[i, j] = corr_matrix[j, i] = X </b>
+             corr_matrix[i, j] = corr_matrix[j, i] = X 
 
-        Above line needs to be modified based on whether the centrality is path
-        based[X = 1/abs(corr)] or strength based[X = abs(corr)],since in our work,
+        If the centrality is path based[X = 1/abs(corr)] or strength based[X = abs(corr)],since in our work,
         proposition is : if correlation assigns higher weight to an edge, the edge
         tends to contribute in shortest path scheme.
             path based centralities: closeness, betweenness
@@ -220,8 +219,7 @@ def nn_centrality(G, weight='None'): #(nearest neighbour edge centrality)
 
 def calc_cent(G, cent):
     if cent=='B':
-        #G.ep.weight.a=1./G.ep.weight.a
-        G.ep.weight.a=G.ep.weight.a
+        G.ep.weight.a=1./G.ep.weight.a
         v,e=betweenness(G, weight=G.ep.weight)
 
     elif cent=='nn':
