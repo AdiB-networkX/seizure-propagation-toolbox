@@ -76,6 +76,8 @@ Set up the following paths:
 
 #### `nw-select.py`
 
+This code samples representative networks by binning consecutive networks and prints the indices of those networks.
+
 Set up the following paths:
 
 `vertex_files`: Uses .csv file containing centrality ranks of all vertices across all networks corresponding to each seizure. In given code, one file path is loaded, but adding multiple file paths is also allowed.
