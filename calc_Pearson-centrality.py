@@ -103,6 +103,8 @@ def calculate_correlation_matrix(data):
     np.fill_diagonal(corr_matrix, 0)
     return corr_matrix
 
+## The below part corresponding to the computations of all four centrality for vertices and edges are contributed by Timo Broehl, University of Bonn ##
+# computation of centralities                                                                          
 def make_graphs(adj):
     g = Graph(directed=False)
     g.add_edge_list(np.transpose(np.triu(adj).nonzero()))
