@@ -4,7 +4,6 @@ Created on Mon Dec 22 11:53:42 2025
 @author: Aditi Bose
 """
 
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -677,15 +676,15 @@ def main():
     ##### betweenness #####
     # edge CSV files (centrality ranks)
     ranked_edge_csv_list = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness-ranked/generalised/[ranked]011a_LMT_no-ref-ch_edge-betweenness-centrality.csv",
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness-ranked/[ranked]011a_LMT_no-ref-ch_edge-betweenness-centrality.csv",
    ]   
     # edge CSV files (actual centrality values)
     values_edge_csv_list = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness/generalised/011a_LMT_no-ref-ch_edge-betweenness-centrality.csv",
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness/011a_LMT_no-ref-ch_edge-betweenness-centrality.csv",
     ]
     # vertex CSV files - for node classification - (centrality ranks)
     vertex_csv_list = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/vertex-betweenness-ranked/generalised/[ranked]011a_LMT_no-ref-ch_vertex-betweenness-centrality.csv",
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/vertex-betweenness-ranked/[ranked]011a_LMT_no-ref-ch_vertex-betweenness-centrality.csv",
     ]
 
     is_right_case_list = [
@@ -731,7 +730,7 @@ def main():
     # Optionally create plots as well
     # Uncomment the lines below if you also want to create the plots
     # Specify your main output directory
-    main_output_dir = "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/edge-cent-threshold"
+    main_output_dir = "C:/Users/edge-cent-threshold"
     
     # Create stacked plots with masking for all subjects
     create_stacked_plots_with_masking_for_multiple_csvs(
