@@ -232,10 +232,10 @@ if __name__ == "__main__":
 
 
     vertex_files = [
-"C:/Users/Aditi Bose/centrality-csvs-ranked/betweenness/vertex/[ranked]011a_LMT_no-ref-ch_vertex-betweenness.csv",
+"C:/Users/centrality-csvs-ranked/betweenness/vertex/[ranked]011a_LMT_no-ref-ch_vertex-betweenness.csv",
         ]
     edge_files = [
-"C:/Users/Aditi Bose/centrality-csvs/betweenness/edge/011a_LMT_no-ref-ch_edge-betweenness.csv",
+"C:/Users/centrality-csvs/betweenness/edge/011a_LMT_no-ref-ch_edge-betweenness.csv",
         ]
     
     
@@ -244,7 +244,7 @@ if __name__ == "__main__":
 #####====================================================#####
     # each file has grouping for consecutive networks e.g. [0,1,2],[3,4,5]...
     segment_files = [
-"C:/Users/Aditi Bose/network-binning-scheme/011a_L1.py",
+"C:/Users/network-binning-scheme/011a_L1.py",
  ]
 
 
@@ -252,6 +252,6 @@ if __name__ == "__main__":
 "betweenness - 011a_L1",
     ]
    
-    output_directory = "C:/Users/Aditi Bose/Downloads/Communications Physics reviews/plots2reproduce/nw-select_deg/25p-overlap/12nws"
+    output_directory = "C:/Users/nw-select_deg/25p-overlap/12nws"
     
     main(vertex_files, edge_files, segment_files, output_directory, plot_names)
