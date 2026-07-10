@@ -450,7 +450,7 @@ class SeizurePropagationClassifier:
             print(f"📋 Sequence summary exported to: {filename}")
             return df_summary
     
-    def create_component_plots(self, results, save_path="C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/weighted-Shannon-based-grouping/"):
+    def create_component_plots(self, results, save_path="C:/Users/weighted-Shannon-based-grouping/"):
         """Create plots for ictal-only analysis"""
         
         # Extract data for plotting
@@ -554,11 +554,11 @@ def analyze_propagation_patterns():
     
     # Analyze with both methods
     results = classifier.analyze_subjects_ictal_only(subjects_data, subject_ids, 
-                csv_path="C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/coarse-graining-of-top-MIEs/edge-bw.csv")
+                csv_path="C:/Users/coarse-graining-of-top-MIEs/edge-bw.csv")
      
     # Export detailed results with sequences
     df_detailed = classifier.export_results_to_csv(results, 
-        "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/weighted-Shannon-based-grouping/szr-grouping_detailed_ictal_bw.csv")
+        "C:/Users/weighted-Shannon-based-grouping/szr-grouping_detailed_ictal_bw.csv")
      
     # Create plots
     classifier.create_component_plots(results)
@@ -616,7 +616,7 @@ def cross_check_subject(results, subject_id):
 if __name__ == "__main__":
     results, classifier = analyze_propagation_patterns()
     # Export debug data for variable explorer
-    debug_df = classifier.export_debug_data("C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/weighted-Shannon-based-grouping/debug_entropy_calculations_ictal_bw.csv")
+    debug_df = classifier.export_debug_data("C:/Users/weighted-Shannon-based-grouping/debug_entropy_calculations_ictal_bw.csv")
     
     # Cross-check specific subjects
     cross_check_subject(results, "S-01")
