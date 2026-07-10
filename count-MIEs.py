@@ -412,15 +412,15 @@ def main():
     ##### betweenness #####
     # edge CSV files (centrality ranks)
     ranked_edge_csv_list = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness-ranked/generalised/[ranked]011a_LMT_no-ref-ch_edge-betweenness-centrality.csv"
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness-ranked/[ranked]011a_LMT_no-ref-ch_edge-betweenness-centrality.csv"
     ]   
     # edge CSV files (actual centrality values)
     values_edge_csv_list = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness/generalised/011a_LMT_no-ref-ch_edge-betweenness-centrality.csv"
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness/011a_LMT_no-ref-ch_edge-betweenness-centrality.csv"
     ]
     # vertex CSV files - for node classification - (centrality ranks)
     vertex_csv_list = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/vertex-betweenness-ranked/generalised/[ranked]011a_LMT_no-ref-ch_vertex-betweenness-centrality.csv"
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/vertex-betweenness-ranked/[ranked]011a_LMT_no-ref-ch_vertex-betweenness-centrality.csv"
     ]
 
     is_right_case_list = [  
@@ -439,7 +439,7 @@ def main():
     threshold_value = 76
     
     # Optional: specify output CSV path
-    output_csv_path = "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/coarse-graining-of-top-MIEs/edge-bw.csv"
+    output_csv_path = "C:/Users/coarse-graining-of-top-MIEs/edge-bw.csv"
     
     # Run the analysis
     analyzer = analyze_edge_segments_with_threshold(
