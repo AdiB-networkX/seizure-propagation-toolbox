@@ -1,24 +1,23 @@
 # -*- coding: utf-8 -*-
+# This code is ranking the vertex centrality files and plotting  them too
 """
 Created on Sun Dec 21 12:58:14 2025
 @author: Aditi Bose
 """
 
-#this code is ranking the vertex centrality files and plotting  them too
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
 csv_files = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/vertex-betweenness/generalised/011a_LMT_no-ref-ch_vertex-betweenness-centrality.csv"
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/vertex-betweenness/011a_LMT_no-ref-ch_vertex-betweenness-centrality.csv"
 ]
 
 transposed_dfs = {}
 ranked_dfs = {}
 
-output_directory = "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/centrality-csvs"
+output_directory = "C:/Users/centrality-csvs"
 
-          
 for file in csv_files:    
     file_name = os.path.basename(file)
     base_name = os.path.splitext(file_name)[0]
