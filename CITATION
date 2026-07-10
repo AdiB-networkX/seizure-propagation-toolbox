@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it using the metadata below."
+title: "Code for "
+version: 1.0.0
+date-released: 2026-07-10
+type: software
+authors:
+  - family-names: "Bose"
+    given-names: "Aditi"
+    affiliation: "International Institute of Information Technology (Hyderabad), India"
+  - family-names: "Broehl"
+    given-names: "Timo"
+    affiliation: "University of Bonn, Germany"
+repository-code: "https://github.com/AdiB-networkX/seizure-propagation-toolbox"
+license: MIT
+keywords:
+  - EEG
+  - functional brain networks
+  - network neuroscience
+  - edge centrality
