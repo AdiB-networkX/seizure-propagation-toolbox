@@ -380,10 +380,10 @@ def main():
     generator = EpilepsyHeatmapGenerator()
     
     # Specify your CSV file path
-    csv_path = "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/coarse-graining-of-top-MIEs/edge-bw.csv"
+    csv_path = "C:/Users/coarse-graining-of-top-MIEs/edge-bw.csv"
     
     # Specify output directory for saving plots
-    output_dir = "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/coarse-graining-of-top-MIEs"
+    output_dir = "C:/Users/coarse-graining-of-top-MIEs"
     
     # Define custom plot names for each subject
     plot_names = [
