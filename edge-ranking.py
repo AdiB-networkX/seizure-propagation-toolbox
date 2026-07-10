@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jun  2 06:05:22 2024
-@author: Aditi
+@author: Aditi Bose
 """
 
 
@@ -10,14 +10,14 @@ import matplotlib.pyplot as plt
 import os
 
 csv_files = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness/generalised/011a_LMT_no-ref-ch_edge-betweenness-centrality.csv"
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness/011a_LMT_no-ref-ch_edge-betweenness-centrality.csv"
 ]
 
 transposed_dfs = {}
 ranked_dfs = {}
 
 #Just to calculate dege centralities
-output_directory = "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/centrality-csvs"
+output_directory = "C:/Users/centrality-csvs"
 
 for file in csv_files:    
     file_name = os.path.basename(file)
