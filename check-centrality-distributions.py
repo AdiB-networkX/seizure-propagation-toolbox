@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Dec 21 22:23:35 2025
-
 @author: Aditi Bose
 """
 
@@ -356,12 +355,12 @@ def create_interactive_html(frame_data, plot_name, plot_title, output_folder):
 # Example usage
 # ## edge betweenness
 # input_files = [
-# "C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness/generalised/011a_LMT_no-ref-ch_edge-betweenness-centrality.csv",
+# "C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/edge-betweenness/011a_LMT_no-ref-ch_edge-betweenness-centrality.csv",
 # ]
 
 ## vertex betweenness
 input_files = [
-"C:/Users/Aditi Bose/Downloads/1_Centrality Values and Ranks - window length=2.5s, no binning/vertex-betweenness/generalised/011a_LMT_no-ref-ch_vertex-betweenness-centrality.csv",
+"C:/Users/1_Centrality Values and Ranks - window length=2.5s, no binning/vertex-betweenness/011a_LMT_no-ref-ch_vertex-betweenness-centrality.csv",
 ]
 
 plot_names = [	
@@ -377,7 +376,7 @@ selected_networks_list = [
     [1,8,12,15,24,26,32,39,41,45,55,64], #S18
 ]
 
-output_folder = "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/centrality-distribution"
+output_folder = "C:/Users/centrality-distribution"
 
 
 # Loop through the files, plot names, titles, and selected networks to generate animations
