@@ -15,17 +15,17 @@ import os
 
 # Input EEG file paths (add multiple paths here)
 eeg_file_paths = [
-"/content/drive/MyDrive/project: EEG epilepsy-UKB/Codes-for-submission2025_science-advances/011a_LMT_no-ref-ch.csv"
+"/content/drive/MyDrive/011a_LMT_no-ref-ch.csv"
 ]
 
 # Output directories for correlation metrics corresponding to input files
 correlation_output_dirs = [
-"/content/drive/MyDrive/project: EEG epilepsy-UKB/Codes-for-submission2025_science-advances/PCMs/011a_LMT"
+"/content/drive/MyDrive/PCMs/011a_LMT"
 ]
 
 # Output directories for centrality measures
-output_dir_vertex = "/content/drive/MyDrive/project: EEG epilepsy-UKB/Codes-for-submission2025_science-advances/centrality-csvs"
-output_dir_edge = "/content/drive/MyDrive/project: EEG epilepsy-UKB/Codes-for-submission2025_science-advances/centrality-csvs"
+output_dir_vertex = "/content/drive/MyDrive/centrality-csvs"
+output_dir_edge = "/content/drive/MyDrive/centrality-csvs"
 
 # Create output directories if they do not exist
 os.makedirs(output_dir_vertex, exist_ok=True)
@@ -51,12 +51,12 @@ def segment_data(data, window_size):
     """
     n_timepoints = data.shape[0]
 
-    # Handle the first 5000 data points
+    # Handle the first 5000 data points corresponding to PRE-ICTAl PHASE
     first_segment = data[:5000, :]
     n_first_windows = 5000 // window_size
     first_windows = [first_segment[i * window_size:(i + 1) * window_size, :] for i in range(n_first_windows)]
 
-    # Handle the middle section
+    # Handle the middle section corresponding to ICTAl PHASE
     middle_segment = data[5000:-5000, :]
     n_middle_windows = len(middle_segment) // window_size
     middle_windows = [middle_segment[i * window_size:(i + 1) * window_size, :] for i in range(n_middle_windows)]
@@ -66,7 +66,7 @@ def segment_data(data, window_size):
     if leftover_start < len(middle_segment):
         middle_windows.append(middle_segment[leftover_start:, :])
 
-    # Handle the last 5000 data points
+    # Handle the last 5000 data points corresponding to POST-ICTAl PHASE
     last_segment = data[-5000:, :]
     n_last_windows = 5000 // window_size
     last_windows = [last_segment[i * window_size:(i + 1) * window_size, :] for i in range(n_last_windows)]
@@ -99,6 +99,7 @@ def calculate_correlation_matrix(data):
         tends to contribute in shortest path scheme.
             path based centralities: closeness, betweenness
             strength based centralities: degree, eigen vector
+        This is implemented in the definition 'calc_cent'.
         """
     np.fill_diagonal(corr_matrix, 0)
     return corr_matrix
@@ -109,15 +110,12 @@ def make_graphs(adj):
     g = Graph(directed=False)
     g.add_edge_list(np.transpose(np.triu(adj).nonzero()))
 
-
     remove_parallel_edges(g)
 
     edge_weights = g.new_edge_property('double')
     g.edge_properties["weight"] = edge_weights
 
-
     edge_weights.a=list(filter(lambda x: x >0, np.triu(adj).flatten()))
-
 
     return g
 
