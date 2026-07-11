@@ -230,7 +230,7 @@ Required to set up the followings in definition ***analyze_propagation_patterns*
 ```python
 # Analyze with both methods
 results = classifier.analyze_subjects_ictal_only(subjects_data, subject_ids, 
-            csv_path="C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/coarse-graining-of-top-MIEs/edge-bw.csv")
+            csv_path="C:/Users/coarse-graining-of-top-MIEs/edge-bw.csv")
 ```
 
 `df_detailed`: Change where to save the analysis results.
@@ -238,7 +238,7 @@ results = classifier.analyze_subjects_ictal_only(subjects_data, subject_ids,
 ```python
 # Export detailed results with sequences
 df_detailed = classifier.export_results_to_csv(results, 
-    "C:/Users/Aditi Bose/OneDrive - IIIT Hyderabad/IIITH-PhD/Research-works/EEG-epilepsy-UKB/Universitätsklinikum Bonn/codes-outputs-plots_v1/Codes-for-submission2025_science-advances/weighted-Shannon-based-grouping/szr-grouping_detailed_ictal_bw.csv")
+    "C:/Users/weighted-Shannon-based-grouping/szr-grouping_detailed_ictal_bw.csv")
 ```
 
 ## Folders
