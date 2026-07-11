@@ -13,6 +13,7 @@ authors:
     given-names: "Timo"
     affiliation: "University of Bonn, Germany"
 repository-code: "https://github.com/AdiB-networkX/seizure-propagation-toolbox"
+doi: https://doi.org/10.5281/zenodo.21299494
 license: MIT
 keywords:
   - EEG
