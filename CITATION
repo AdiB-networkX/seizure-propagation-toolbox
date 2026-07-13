@@ -12,6 +12,12 @@ authors:
   - family-names: "Broehl"
     given-names: "Timo"
     affiliation: "University of Bonn, Germany"
+  - family-names: "Lehnertz"
+    given-names: "Klaus"
+    affiliation: "University of Bonn, Germany"
+  - family-names: "Hens"
+    given-names: "Chittaranjan"
+    affiliation: "International Institute of Information Technology (Hyderabad), India"
 repository-code: "https://github.com/AdiB-networkX/seizure-propagation-toolbox"
 doi: https://doi.org/10.5281/zenodo.21299494
 license: MIT
